@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html {
+    background-color: #e8e5e5;
+}
+body {
+    min-height: 720px;
+    font-family: "Poppins", sans-serif;
+    
+}
+.player {
+    max-width: 500px;
+    margin:0 auto;
+    position: relative;
+}
+.dashboard {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+header h4 {
+    font-size: 14px;
+    color: #998a8a;
+    padding: 10px 0px;
+}
+header p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+.cd {
+    display: flex;
+    width: 200px;
+    margin: 20px 0;
+}
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+    z-index: 10;
+}
+.dashboard .control {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.active i{
+    color: red;
+}
+.btn {
+    min-width: 60px;
+    padding: 14px;
+    font-size: 25px;
+    color: #624b4b;
+    margin: 10px;
+    cursor: pointer;
+}
+/* .btn:hover {
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+} */
+.btn-toggle-play i{
+    font-size: 50px;
+    color: #d81642;
+}
+.btn-toggle-play:hover{
+    background-color: #fff;
+}
+.player.playing .icon-pause {
+    display: inline-block;
+}
+
+.player .icon-pause {
+    display: none;
+}
+.player.playing .icon-play {
+    display: none;
+}
+
+#progress {
+    height: 5px;
+    width: 75%;
+    border-radius: 10px;
+    background: #ccc;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-appearance: none;
+}
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #ac1a1a;
+    box-shadow: -400px 0 0 400px royalblue;
+}
+.playlist {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+}
+.song {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* .song:hover {
+    background-color: #ccc;
+    cursor: pointer;
+} */
+.title {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 5px;
+}
+.song:active {
+    opacity: 0.8;
+}
+.song.active1 .footer,
+.song.active1 .song-name,
+.song.active1 .singer-name {
+    color: #fff;
+}
+.active1 {
+    background-color: #e04d6f;
+}
+.body {
+    flex: 1;
+    padding: 0 10px;
+}
+.body h4 {
+    font-size: 18px;
+}
+.body p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+.footer {
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0.7;
+}
